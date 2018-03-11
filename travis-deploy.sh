@@ -3,7 +3,7 @@ set -e
 
 image="ffaerber/go-ethereum"
 
-docker tag geth "$image:linux-$ARCH-$TRAVIS_TAG"
+docker tag go-ethereum "$image:linux-$ARCH-$TRAVIS_TAG"
 docker push "$image:linux-$ARCH-$TRAVIS_TAG"
 
 if [ "$ARCH" == "amd64" ]; then
