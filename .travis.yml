@@ -6,9 +6,9 @@ services:
 # https://ethereum.github.io/go-ethereum/downloads/
 env:
   matrix:
-    - ARCH=arm   QEMU=qemu-arm-static     BASE_IMAGE=arm32v7/debian:jessie-slim  GETH_SOURCE=geth-alltools-linux-arm7-1.8.19-dae82f09
-    - ARCH=arm64 QEMU=qemu-aarch64-static BASE_IMAGE=arm64v8/debian:jessie-slim  GETH_SOURCE=geth-alltools-linux-arm64-1.8.19-dae82f09
-    - ARCH=amd64 QEMU=qemu-fake-static    BASE_IMAGE=amd64/debian:jessie-slim    GETH_SOURCE=geth-alltools-linux-amd64-1.8.19-dae82f09
+    - ARCH=arm   QEMU=qemu-arm-static     BASE_IMAGE=arm32v7/debian:jessie-slim  GETH_SOURCE=geth-alltools-linux-arm7-1.8.26-cdae1c59
+    - ARCH=arm64 QEMU=qemu-aarch64-static BASE_IMAGE=arm64v8/debian:jessie-slim  GETH_SOURCE=geth-alltools-linux-arm64-1.8.26-cdae1c59
+    - ARCH=amd64 QEMU=qemu-fake-static    BASE_IMAGE=amd64/debian:jessie-slim    GETH_SOURCE=geth-alltools-linux-amd64-1.8.26-cdae1c59
 
 script:
   - ./travis-build.sh
